@@ -36,3 +36,11 @@ A simple Kanban board built with **React** and **TypeScript**, using **localStor
    ```sh
    git clone https://github.com/future-fwp/kanban-board.git
    ```
+2. install dependencies
+   ```sh
+   npm install
+   ```
+3. run devepment server
+   ```sh
+   npm run dev
+   ```
