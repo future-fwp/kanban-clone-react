@@ -1,50 +1,38 @@
-# React + TypeScript + Vite
+# Kanban Board
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple Kanban board built with **React** and **TypeScript**, using **localStorage** for data persistence. This project allows users to manage tasks and collaborate with team members.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+-  **User Authentication**
 
-## Expanding the ESLint configuration
+   -  Register and Login (Mock user data stored in `localStorage`)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+-  **Board Management**
 
-- Configure the top-level `parserOptions` property like this:
+   -  Create, delete, and rename boards
+   -  Invite members to collaborate
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+-  **Column Management**
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+   -  Create, delete, and rename columns
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+-  **Task Management**
+   -  Create, delete, and edit tasks
+   -  Drag and drop tasks to adjust position (Optional)
+   -  Add tags to tasks (Optional)
+   -  Assign multiple members to a task
+   -  Send in-system notifications when a member is assigned to a task (Optional)
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+## Tech Stack
+
+-  **React (Vite)**
+-  **TypeScript**
+-  **Tailwind CSS**
+
+## Installation
+
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/future-fwp/kanban-board.git
+   ```
