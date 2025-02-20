@@ -3,6 +3,7 @@ import { Auth } from "./components/Auth";
 import { Dashboard } from "./components/Dashboard";
 import { BoardProvider } from "./context/BoardContext";
 import { ToastContainer } from "react-toastify";
+// add run some npm run build
 function App() {
 	const { isAuthenticated } = useAuth();
 
