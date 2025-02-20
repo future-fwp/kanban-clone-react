@@ -2,6 +2,8 @@
 
 A simple Kanban board built with **React** and **TypeScript**, using **localStorage** for data persistence. This project allows users to manage tasks and collaborate with team members.
 
+[Kanban clone website](https://kanban-board-clone-49413f.netlify.app/)
+
 ## Features
 
 -  **User Authentication**
